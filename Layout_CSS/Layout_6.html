@@ -12,12 +12,38 @@
             background-color: aquamarine;
         }
         .row{
-            width: 100%;
             height: 150px;
-            background-color: blue;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
         }
-        .row article{
-            
+        section{
+            background-color: blue;
+            width: 70%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+        }
+        .row .article_1{
+            background-color: brown;
+            width: 95%;
+            height: 40%;
+            float: left;
+            margin: 10px 0px 0px 10px;
+        }
+        .row .article_2{
+            background-color: yellow;
+            width: 95%;
+            height: 40%;
+            float: left;
+            margin: 0px 0px 10px 10px;
+        }
+        aside {
+            width: 30%;
+            height: 100%;
+            background-color: violet;
+            flex-direction: column;
+            display: flex;
         }
     </style>
 </head>
@@ -26,11 +52,12 @@
     <nav>2</nav>
     <div class="row">
         <section>
-            <article>1</article>
-            <article>2</article>
+            <article class="article_1">1</article>
+            <article class="article_2">2</article>
+            
         </section>
         <aside>7</aside>
     </div>
-    <footer>7</footer>
+    <footer>8</footer>
 </body>
 </html>
