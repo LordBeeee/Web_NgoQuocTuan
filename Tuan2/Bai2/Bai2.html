@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .header_logo{
+            display: flex;
+            background-image: url(background.png);
+        }
+        .header_text{
+            font-size: 30px;
+            color: white;
+        }
+        .header_text_1{
+            font-size: 20px;
+            color: white;
+        }
+        .header_nav{
+            display: flex;
+            flex-direction: row;
+            background-color: gray;
+        }
+        .nav_item{
+            padding: 10px 30px;
+            color: white;
+        }
+        .nav_item:first-child{
+            padding: 10px 30px;
+            color: black;
+        }
+        .section_1{
+            display: flex;
+            flex-direction: row;
+        }
+        .section{
+            width: 70%;
+        }
+        .aside{
+            width: 30%;
+        }
+        .box_img{
+            display: flex;
+            flex-direction: row;
+            margin: 50px;
+        }
+        .bolder_img{
+            border: 1px solid gray;
+            padding: 5px;
+        }
+        .box_content{
+            padding: 30px 15px;
+            margin-left: 50px;
+        }
+        .text_title_1{
+            font-size: 30px;
+            color: gray;
+        }
+        .text_title_2{
+            font-size: 28px;
+            color: pink;
+        }
+        .text_content{
+            font-size: 20px;
+            color: gray;
+            margin: 20px 0px;
+            line-height: 25px;
+        }
+        .aside{
+            padding: 0px 50px;
+            border-left: 1px solid gray;
+        }
+        .aside_title{
+            margin-top: 83px;
+            font-size: 30px;
+            color: pink;
+        }
+        .aside_ul{
+            padding: 0px 20px;
+            width: 55%;
+        }
+        .aside_li{
+            list-style-type: none;
+            color: pink;
+            font-size: 20px;
+            padding:10px;
+            border-bottom: 1px solid gray;
+        }
+        .aside_li_1{
+            list-style-type: none;
+            color: gray;
+            font-size: 20px;
+            line-height: 25px;
+        }
+        .footer{
+            background-color: gray;
+            color: white;
+            padding: 5px 0px 0px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header_logo">
+                <img src="logo.png" alt="">
+                <div style="margin: auto 20px; font-weight: 600;">
+                    <p class="header_text">YOKO'S KITCHEN</p>
+                    <p class="header_text_1">JAPANESE COOKING CLASSES</p>
+                </div>
+            </div>
+            <nav class="header_nav">
+                <div class="nav_item">home</div>
+                <div class="nav_item">classes</div>
+                <div class="nav_item">catering</div>
+                <div class="nav_item">about</div>
+                <div class="nav_item">contact</div>
+            </nav>
+        </header>
+        <div class="section_1">
+            <section class="section">
+                <article class="box_img">
+                    <div class="bolder_img">
+                        <img src="teriyaki.jpg" alt="">
+                        <p>Bolk Choi</p>
+                    </div>
+                    <div class="box_content">
+                        <p class="text_title_1">Japanese Vegetarian</p>
+                        <p class="text_title_2">Five week course in London</p>
+                        <p class="text_content">A five week introduction to traditional Japanese <br>
+                        vegetarian meals, teaching you a<br>
+                         selection of rice and noodle dishes.</p>
+                    </div>
+                </article>
+                <article class="box_img">
+                    <div class="bolder_img">
+                        <img src="teriyaki.jpg" alt="">
+                        <p>Teriyaki Sauce</p>
+                    </div>
+                    <div class="box_content">
+                        <p class="text_title_1">Sauces Masterclass</p>
+                        <p class="text_title_2">One day workshop</p>
+                        <p class="text_content">An intensive one-day course looking at how <br>
+                            to create the most delicious sauces for use in <br>
+                            a range of Japanese cookery.</p>
+                    </div>
+                </article>
+            </section>
+            <aside class="aside">
+                <p class="aside_title">Popular Recipies</p>
+                <ul class="aside_ul">
+                    <li class="aside_li">Yakitori (grilled chicken)</li>
+                    <li class="aside_li">Tsukune (minced chicken patties)</li>
+                    <li class="aside_li">Okonomiyaki (savory pancakes)</li>
+                    <li class="aside_li">Mizutaki (chicken stew)</li>
+                </ul>
+                <p class="aside_title">Contact</p>
+                <ul style="margin-top:20px;">
+                    <li class="aside_li_1">Yoko's Kitchen</li>
+                    <li class="aside_li_1">27 Redchurch Street</li>
+                    <li class="aside_li_1">Shoreditch</li>
+                    <li class="aside_li_1">London E2 7DP</li>
+                </ul>
+            </aside>
+        </div>
+        <footer class="footer">@2011 Yoko's Kitchen</footer>
+    </div>
+</body>
+</html>
