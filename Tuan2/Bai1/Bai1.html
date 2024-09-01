@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .menu_text{
+            text-align: center;
+            color: brown;
+            font-size: 30px;
+            text-shadow:5px 5px pink;
+        }
+        .nav_menu{
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            background-color: pink;
+        }
+        .nav_text{
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .text_1{
+            padding: 10px 0px;
+            color: blue;
+            font-size: 20px;
+        }
+        .section{
+            flex-direction: row;
+            display: flex;
+        }
+        .section_nav{
+            flex-direction: column;
+            display: flex;
+            width: 20%;
+            margin-top: 15px;
+        }
+        .nav_text1{
+            background-color: pink;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 15px;
+            margin: 5px 0px;
+            padding: 10px 0px 10px 20px;
+        }
+        .nav_img{
+            border-radius: 60%;
+            margin-top: 30px;
+            box-shadow:10px 20px 20px pink ;
+        }
+        .section_center{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            width: 50%;
+        }
+        .section_text_h1{   
+            margin: 0px auto;
+            background-color: pink;
+            width: 50%;
+            letter-spacing: 17px;
+            padding-left: 25px;
+            color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wapper">
+        <h1 class="menu_text">EXAMPLE CAFE MENU</h1>
+        <div class="nav_menu">
+            <img src="icons8-home-50.png" alt="" style="width: 30px; height:30px; padding-right: 30px;">
+            <p class="text_1">|</p>
+            <a class="nav_text" href="">Starter</a>
+            <p class="text_1">|</p>
+            <a class="nav_text" href="">Main Courses</a>
+            <p class="text_1">|</p>
+            <a class="nav_text" href="">Desserts</a>
+            <p class="text_1">|</p>
+            <form action="" style="padding: 15px 0px 0px 30px;">
+                <input type="text">
+                <input type="button" value="Go">
+            </form>
+        </div>
+        <div class="section">
+            <nav class="section_nav">
+                <a href="" class="nav_text1">Cafe Laite</a>
+                <a href="" class="nav_text1">Capuchino</a>
+                <a href="" class="nav_text1">Ocean Blue</a>
+                <a href="" class="nav_text1">Ice-cream Cafe</a>
+                <a href="" class="nav_text1">Order Online</a>
+                <img src="company.png" alt="" class="nav_img">
+            </nav>
+            <section class="section_center">
+                <h1 class="section_text_h1">Starter</h1>
+                <ul>
+                    <li>Chesnut and Mushroom Goujons <a href="http://">(v)</a></li>
+                    <li>Goat Cheese <a href="http://">(v)</a></li>
+                    <li>HONEY SOY CHICKEN KEBABS <a href="http://">(v)</a></li>
+                    <li>Seafood Salad <a href="http://">(v)</a></li>
+                </ul>
+                <a href="http:///">Back to Top</a>
+                <h1 class="section_text_h1">Desserts</h1>
+                <ul>
+                    <li>Lemon Sorbet <a href="http://">(v)</a></li>
+                    <li>Chocolate Mud Pie <a href="http://">(v)</a></li>
+                    <li>Pecan Pie <a href="http://">(v)</a></li>
+                    <li>Selection of fine Cheeses from Around the World <a href="http://">(v)</a></li>
+                </ul>
+                <a href="http:///">Back to Top</a>
+                <h1 class="section_text_h1">INFORMATION</h1>
+            </section>
+            <aside></aside>
+        </div>
+    </div>
+    
+
+</body>
+</html>
