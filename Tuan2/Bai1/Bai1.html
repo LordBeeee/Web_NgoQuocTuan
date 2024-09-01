@@ -36,6 +36,7 @@
         .section{
             flex-direction: row;
             display: flex;
+            height: 700px;
         }
         .section_nav{
             flex-direction: column;
@@ -69,7 +70,43 @@
             letter-spacing: 17px;
             padding-left: 25px;
             color: red;
-            
+        }
+        .section_ul{
+            margin-left: 5%;
+        }
+        .section_ul li a{
+            color: red;
+        }
+        .input{
+            width: 40%;
+            height: 30px;
+            padding: 5px;
+            margin: 20px 5px;
+        }
+        .input_opt{
+            width:41.5%;
+            height: 40px;
+            padding: 5px;
+            margin: 20px 5px;
+        }
+        .section_right{
+            width: 30%;
+            flex-direction: column;
+            display: flex;
+            background-color: black;
+            color: #fff;
+        }
+        .box_img{
+            margin: 20px 0px 0px 50px;
+        }
+        .footer{
+            background-color: pink;
+        }
+        .footer_p{
+            margin-left: 40%;
+            padding: 20px 0px;
+            font-size: 20px;
+            color: white;
         }
     </style>
 </head>
@@ -101,25 +138,62 @@
             </nav>
             <section class="section_center">
                 <h1 class="section_text_h1">Starter</h1>
-                <ul>
+                <ul class="section_ul">
                     <li>Chesnut and Mushroom Goujons <a href="http://">(v)</a></li>
                     <li>Goat Cheese <a href="http://">(v)</a></li>
-                    <li>HONEY SOY CHICKEN KEBABS <a href="http://">(v)</a></li>
+                    <li style="color: burlywood;">HONEY SOY CHICKEN KEBABS <a href="http://">(v)</a></li>
                     <li>Seafood Salad <a href="http://">(v)</a></li>
                 </ul>
-                <a href="http:///">Back to Top</a>
+                <a href="http:///" style="color: red;"">Back to Top</a>
                 <h1 class="section_text_h1">Desserts</h1>
-                <ul>
+                <ul class="section_ul">
                     <li>Lemon Sorbet <a href="http://">(v)</a></li>
                     <li>Chocolate Mud Pie <a href="http://">(v)</a></li>
                     <li>Pecan Pie <a href="http://">(v)</a></li>
                     <li>Selection of fine Cheeses from Around the World <a href="http://">(v)</a></li>
                 </ul>
-                <a href="http:///">Back to Top</a>
+                <a href="http:///" style="color: red;">Back to Top</a>
                 <h1 class="section_text_h1">INFORMATION</h1>
+                <form action="">
+                    <input type="text" name="" id="" class="input" placeholder="First Name">
+                    <input type="text" name="" id="" class="input" placeholder="Last Name">
+                    <input class="input" placeholder="Email"></input>
+                    <input type="text" class="input" placeholder="Telephone">
+                    <Select class="input_opt">
+                        <optgroup >
+                            <option value="">USA</option>
+                            <option value="">VN</option>
+                        </optgroup>
+                    </Select>
+                    <input type="radio" name="" id="" style="margin-left: 10px;">Vietnamese
+                    <input type="radio">Foreiger
+                    <br>
+                    <textarea name="" id="" placeholder="Comment" style="width: 85%;height: 50px; margin-left: 5px; margin-top: 10px;"></textarea>
+                    <br>
+                    <input type="button" value="Submit" style="margin-left: 5px; width: 50px;height: 30px; margin-top: 10px; ">
+                    <input type="button" value="Cacel" style="width: 50px;height: 30px; margin-top: 10px; padding: 0px 5px;">
+                </form>
             </section>
-            <aside></aside>
+            <aside class="section_right">
+                <h1>Events</h1>
+                <div class="box_img">
+                    <h2>Regular Meetings</h2>
+                    <img src="meeting.png" alt="" style="width: 80%; height: 70%;">
+                    <p  >Host your regular team meetings or activities in the comfort of your own private room. Charge up on Kith's aromatic coffee and delectable dishes for that extra boost in your work!</p>
+                </div>
+                <div class="box_img">
+                    <h2>Product Launches</h2>
+                    <img src="meeting.png" alt="" style="width: 80%; height: 70%;">
+                    <p>Launch your product with ease in a space that truly fits its image. Create an unforgettable experience for your guests with our spacious outlets! Whether you want to host an intimate celebration or launch an event for hundreds of guests, Kith's space is customisable to your needs</p>
+                </div>
+            </aside>
         </div>
+        <footer class="footer">
+            <p class="footer_p">
+                ABC company - 12345678 - abccoffee@gmail.com
+            </p>
+            
+        </footer>
     </div>
     
 
