@@ -41,6 +41,48 @@
             margin-top: 20px;
             font-size: 18px;
         }
+        .form{
+            flex-direction: row;
+            display: flex;
+            padding: 10px 30px;
+        }
+        .lbl{
+            display: flex;
+            flex-direction: column;
+            line-height: 30px;
+        }
+        .iput{
+            display: flex;
+            flex-direction: column;
+            margin-left: 150px;
+        }
+        .input{
+            border-color: white;
+            color: gray;
+            background-color: white;
+        }
+        .sumbit{
+            color: black;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            width: 60px;
+            height: 20px;
+        }
+        .section_right{
+            padding: 50px;
+        }
+        .text_1{
+            color: aqua;
+            margin: 30px 0px 0px 130px;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px aqua;
+        }
+        .text_2{
+            color: aqua;
+            margin: 10px 0px 0px 150px;
+            font-size: 20px;
+            text-shadow: 2px 2px 2px aqua;
+        }
     </style>
 </head>
 <body>
@@ -63,8 +105,39 @@
                 <p class="text_content">Start your travel planning now with our on-line tour regstration
                     form. Just tell us a little about yourself and your group and one of our travel
                     experts will contact  you  to create the perfect custom built for your group's needs .</p>
+                <form action="" class="form">
+                    <div class="lbl">
+                        <label for="">Title</label>
+                        <label for="">Full Name*</label>
+                        <label for="">Mailing Address</label>
+                        <label for="">City</label>
+                        <label for="">Country</label>
+                        <label for="" style="margin-top: 20px;">Specific questions of <br>
+                            requests about your lour</label>
+                    </div>
+                    <div class="iput">
+                        <select name="" id="" style="width: 50px; margin-bottom: 13px;" class="input">
+                            <optgroup>
+                                <option value="">Mr.</option>
+                                <option value="">2</option>
+                            </optgroup>
+                        </select>
+                        <input type="text" placeholder="First Name" style="width: 250px; margin-bottom: 13px;" class="input">
+                        <input type="text" placeholder="Mailing Address" style="width: 250px; margin-bottom: 13px;" class="input">
+                        <input type="text" placeholder="City" style="width: 250px; margin-bottom: 13px;" class="input">
+                        <input type="text" placeholder="Country" style="width: 250px; margin-bottom: 13px;" class="input">
+                        <textarea name="" id="" placeholder="Specific questions of requests about your lour" style="height: 90px;" class="input"></textarea>
+                    </div>
+                </form>
+                <input type="button" value="Sumbit" class="sumbit" style="margin-left: 335px;">
+                <input type="button" value="Reset" class="sumbit">
             </div>
-            <div class="section_right"></div>
+
+            <div class="section_right">
+                <img src="sky.png" alt="" style="width: 70%;margin-left: 50px;">
+                <h1 class="text_1">You've arrived</h1>
+                <p class="text_2">Journeys as great as the destinations.</p>
+            </div>
         </div>
     </div>
 </body>
